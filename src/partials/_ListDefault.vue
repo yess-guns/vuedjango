@@ -18,19 +18,18 @@ export default {
       elements: []
     };
   },
-  methods: {
-    findAll: function() {
-      fetch("http://localhost:8000/api/element/?format=json")
-        .then(res => res.json())
-        .then(res => (this.elements = res));
-    }
-  }
+  methods: {}
 };
 </script>
 
 <style >
-.box {
-  border: 3px solid #ccc;
-  margin: 5px 0 0 0;
+a.card-link,
+a.card-link:hover {
+  color: #222;
+  text-decoration: none;
+}
+
+a.card-link:hover .card-body {
+  background: #f8f9fa;
 }
 </style>
