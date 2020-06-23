@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <b-card :title="element.title">
     
       <b-card-text>

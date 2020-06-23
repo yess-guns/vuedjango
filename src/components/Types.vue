@@ -1,5 +1,6 @@
 <template>
   <div>
+  <h5>Tipos</h5>
     <b-list-group>
       <div v-for="t in types" v-bind:key="t.id">
       <b-list-group-item button>
