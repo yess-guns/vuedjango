@@ -9,6 +9,7 @@ import VueRouter from 'vue-router'
 import List from './components/List.vue'
 import Detail from './components/Detail.vue'
 import ListCategory from './components/ListCategory.vue'
+import ListType from './components/ListType'
 
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
@@ -19,7 +20,7 @@ const routes = [
   { path: '/', component: List},
   { path: '/detail/', component: Detail},
   { path: '/category/:id/elements', component: ListCategory},
-  //{ path: '/type/:id/elements', component: ListType, name: 'list-type' }
+  { path: '/type/:id/elements', component: ListType}
 ]
 
 const router = new VueRouter({
